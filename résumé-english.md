@@ -1,4 +1,4 @@
-<h1 align="center">Guillaume Boutin<h1>
+<h1 align="center">Guillaume Boutin</h1>
 <h2 align="center">Web developer</h2>
 <p align="center">**Phone** 514 604-8222</p>
 <p align="center">**Email** guillaumeboutin2101@gmail.com</p>
