@@ -1,0 +1,12 @@
+body {
+  background-color: slategray; }
+  body #main-wrapper {
+    background-color: lavender; }
+    body #main-wrapper h1 {
+      background-color: lightblue;
+      color: blue; }
+    body #main-wrapper h2 {
+      background-color: lightgreen;
+      color: green; }
+
+/*# sourceMappingURL=main.css.map */
