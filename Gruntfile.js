@@ -21,27 +21,24 @@ module.exports = function(grunt) {
           'css/main.css': 'scss/main.scss'
         }
       }
-    }
+    },
 
+    watch: {
+      sass: {
+        files: 'scss/main.scss',
+        tasks: ['sass', 'cssmin']
+      }
+    }
 
   });
 
   //Load the npm plugins
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-sass');
 
 
   //Do the tasks
-  grunt.registerTask('default', ['cssmin']);
-
-  grunt.registerTask('speak', function() {
-    console.log("I'm speaking.");
-  });
-
-  grunt.registerTask('yell', function() {
-    console.log("I'm YELLING!");
-  });
-
-  grunt.registerTask('both', ['speak', 'yell']);
+  grunt.registerTask('default', ['watch']);
 
 };

@@ -1,16 +1,117 @@
+/*Temporary background colors*/
+body {
+  background-color: slategray;
+}
+
+#body-wrapper {
+  background-color: white;
+  margin: 0 auto 25px auto;
+}
+
+header {
+  background-color: lightblue;
+}
+
+section {
+  background-color: lavender;
+}
+
+h1 {
+  background-color: lightblue;
+  color: blue;
+}
+h2 {
+  background-color: lightgreen;
+  color: green;
+}
+
+/*-----REAL STYLESHEET-----*/
+
 body {
   background-color: slategray;
 
-  #main-wrapper {
+  #body-wrapper {
     background-color: lavender;
 
-    h1 {
-      background-color: lightblue;
-      color: blue;
-    }
-    h2 {
-      background-color: lightgreen;
-      color: green;
+    section {
+
+      p {
+        text-align: justify;
+      }
+
+      p, li {
+        font-family: Merriweather;
+        font-size: 0.8em;
+      }
+
+      h3 {
+        font-family: Lato;
+        font-size: 1.5em;
+        font-weigth: bold;
+      }
+
+      hr {
+        margin: 0;
+        padding: 0;
+        border-color: black;
+      }
+
+      .section-element {
+        .section-element__head {
+          margin: 20px 0;
+
+          .head__title {
+            display: inline-block;
+            margin: 0;
+            width: 100%;
+
+            .logoDiv {
+              display: inline-block;
+              width: 25px;
+              height: 25px;
+              line-height: 25px;
+              text-align: center;
+              overflow: hidden;
+              float: left;
+              border-radius: 50%;
+              position: relative;
+              top: 3px;
+
+              img {
+                max-width: none;
+                margin: -100%;
+              }
+            }
+            h4 {
+              display: inline-block;
+              font-family: Lato;
+              font-size: 1.4em;
+              float: left;
+              margin: 0 0 0 10px;
+            }
+            .h4-no-margin {
+              margin: 0;
+            }
+          }
+          .head__subtitle {
+            h5 {
+              display: inline-block;
+              font-family: Lato;
+              font-size: 1.1em;
+              font-style: italic;
+              float: left;
+              margin: 0;
+            }
+
+            footer {
+              display: inline-block;
+              text-align: right;
+              font-size: 0.8em;
+              float: right;
+            }
+          }
+        }
+      }
     }
   }
 }
