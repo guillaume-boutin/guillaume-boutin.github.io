@@ -1,7 +1,32 @@
-body #about .about__img {
-  overflow: hidden;
+body #menu-bar {
+  overflow: hidden; }
+  body #menu-bar .menu-list {
+    float: right; }
+    body #menu-bar .menu-list li {
+      border: 1px solid red;
+      display: inline-block;
+      float: left;
+      font-size: 0.7em;
+      padding: 10px; }
+
+body #about .about__img img {
+  display: inline-block;
   width: 200px;
   border-radius: 50%;
-  border: 1px solid lightgrey; }
+  border: 1px solid lightgrey;
+  float: right; }
+
+body #skills .skills-container {
+  border: 1px solid black; }
+  body #skills .skills-container .skills-panel {
+    height: 350px; }
+
+body #education .education-list .education-container .year-container h1 {
+  display: inline-block;
+  float: right; }
+
+body #work-experience .work-list .work-container .year-container h1 {
+  display: inline-block;
+  float: right; }
 
 /*# sourceMappingURL=main.css.map */

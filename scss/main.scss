@@ -1,21 +1,72 @@
 body {
+  // defauls size for 1em is 16px
+  // * {font-size: 16px;}
 
-  #about {
+  #menu-bar {
+    overflow: hidden;
 
-    .about__img {
-      overflow: hidden;
-      width: 200px;
-      border-radius: 50%;
-      border: 1px solid lightgrey;
-
+    .menu-list {
+      float: right;
+      li {
+        border: 1px solid red;
+        display: inline-block;
+        float: left;
+        font-size: 0.7em;
+        padding: 10px;
+      }
     }
 
   }
 
-  section {
+  #about {
+
+    .about__img {
+      img {
+        display: inline-block;
+        width: 200px;
+        border-radius: 50%;
+        border: 1px solid lightgrey;
+        float: right;
+      }
+    }
 
   }
 
-  
+  #skills {
+    .skills-container {
+      border: 1px solid black;
+      .skills-panel {
+        height: 350px;
+      }
+
+    }
+  }
+
+  #education {
+    .education-list {
+      .education-container {
+        .year-container {
+          h1 {
+            display: inline-block;
+            float: right;
+          }
+        }
+      }
+    }
+  }
+
+  #work-experience {
+    .work-list {
+      .work-container {
+        .year-container {
+          h1 {
+            display: inline-block;
+            float: right;
+          }
+        }
+      }
+    }
+  }
+
 
 }
