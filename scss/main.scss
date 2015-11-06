@@ -2,6 +2,14 @@ body {
   // defauls size for 1em is 16px
   // * {font-size: 16px;}
 
+  // & > * {
+  //   margin: auto 10%;
+  // }
+
+  ul {
+    list-style: none;
+  }
+
   #menu-bar {
     overflow: hidden;
 
@@ -16,6 +24,12 @@ body {
       }
     }
 
+  }
+
+  section {
+    h1 {
+      text-align: center;
+    }
   }
 
   #about {
@@ -63,6 +77,17 @@ body {
             display: inline-block;
             float: right;
           }
+        }
+      }
+    }
+  }
+
+  #portfolio {
+    .portfolio-list {
+      .site-container {
+        img {
+          width: 100%;
+          border: 1px solid black;
         }
       }
     }

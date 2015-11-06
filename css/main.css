@@ -1,3 +1,6 @@
+body ul {
+  list-style: none; }
+
 body #menu-bar {
   overflow: hidden; }
   body #menu-bar .menu-list {
@@ -8,6 +11,9 @@ body #menu-bar {
       float: left;
       font-size: 0.7em;
       padding: 10px; }
+
+body section h1 {
+  text-align: center; }
 
 body #about .about__img img {
   display: inline-block;
@@ -28,5 +34,9 @@ body #education .education-list .education-container .year-container h1 {
 body #work-experience .work-list .work-container .year-container h1 {
   display: inline-block;
   float: right; }
+
+body #portfolio .portfolio-list .site-container img {
+  width: 100%;
+  border: 1px solid black; }
 
 /*# sourceMappingURL=main.css.map */
