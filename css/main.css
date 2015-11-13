@@ -1,42 +1,153 @@
-body ul {
-  list-style: none; }
-
-body #menu-bar {
-  overflow: hidden; }
-  body #menu-bar .menu-list {
-    float: right; }
-    body #menu-bar .menu-list li {
-      border: 1px solid red;
+body {
+  position: relative; }
+  body p {
+    text-align: justify; }
+  body p, body li {
+    font-family: Lato, sans-serif; }
+  body ul {
+    list-style: none; }
+  body #menu-bar {
+    overflow: hidden;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 99; }
+    body #menu-bar .menu-list {
+      float: right;
+      margin: 0; }
+      body #menu-bar .menu-list li {
+        display: inline-block;
+        float: left;
+        background-color: white; }
+  body #small-menu {
+    overflow: hidden;
+    position: fixed;
+    border: 1px solid red;
+    background-color: white;
+    z-index: 99;
+    margin: 0;
+    right: 0;
+    top: 37px;
+    display: none; }
+    @media only screen and (min-width: 40.063em) {
+      body #small-menu {
+        display: none; } }
+  body .menu-list li {
+    font-size: 0.7em;
+    padding: 10px; }
+  body #about, body #portfolio, body #skills, body #education, body #work-experience {
+    padding: 0; }
+  body section .head-icon {
+    display: block;
+    text-align: center; }
+    body section .head-icon i {
+      padding: 15px 15px 5px 15px;
+      color: white;
       display: inline-block;
-      float: left;
-      font-size: 0.7em;
-      padding: 10px; }
-
-body section h1 {
-  text-align: center; }
-
-body #about .about__img img {
-  display: inline-block;
-  width: 200px;
-  border-radius: 50%;
-  border: 1px solid lightgrey;
-  float: right; }
-
-body #skills .skills-container {
-  border: 1px solid black; }
-  body #skills .skills-container .skills-panel {
-    height: 350px; }
-
-body #education .education-list .education-container .year-container h1 {
-  display: inline-block;
-  float: right; }
-
-body #work-experience .work-list .work-container .year-container h1 {
-  display: inline-block;
-  float: right; }
-
-body #portfolio .portfolio-list .site-container img {
-  width: 100%;
-  border: 1px solid black; }
+      border: 1px solid lightgray;
+      border-bottom: none;
+      border-radius: 50% 50% 0 0;
+      background-color: steelblue; }
+  body section .section-head {
+    text-align: center;
+    background-color: #f0f3f5;
+    margin-bottom: 50px;
+    border-top: 1px solid lightgray; }
+    body section .section-head h1 {
+      margin: 0;
+      margin-bottom: 10px;
+      padding: 20px 0;
+      font-family: Oswald;
+      color: #777; }
+  body section .section-body {
+    padding: 0 20px 0 20px; }
+  body #about {
+    padding-top: 70px; }
+    body #about .about-container .about__img img {
+      display: inline-block;
+      width: 200px;
+      border-radius: 50%;
+      border: 1px solid lightgrey;
+      box-shadow: 3px 3px 4px #aaa; }
+      @media only screen and (min-width: 40.063em) {
+        body #about .about-container .about__img img {
+          float: right; } }
+      @media screen and (max-width: 40em) {
+        body #about .about-container .about__img img {
+          clear: both; } }
+    @media screen and (max-width: 40em) {
+      body #about .about-container .about__img {
+        text-align: center; } }
+    body #about .about-container .about__title .title-box h1 {
+      font-family: 'Oswald';
+      color: #777; }
+    body #about .about-container .about__title .title-box h2 {
+      font-family: 'Oswald';
+      font-weight: 300;
+      color: steelblue; }
+    @media only screen and (max-width: 40em) {
+      body #about .about-container .about__title .title-box {
+        text-align: center; } }
+    @media only screen and (min-width: 40.063em) {
+      body #about .about-container .about__title .title-box {
+        display: inline-block;
+        float: left;
+        text-align: center; } }
+    body #about .about-container .about__title .social-box {
+      display: block;
+      clear: both; }
+      body #about .about-container .about__title .social-box a li {
+        display: inline-block;
+        border: 1px solid lightgray;
+        border-radius: 50%;
+        color: steelblue;
+        background-color: white;
+        box-shadow: 3px 3px 4px #aaa;
+        transition: color 0.4s, background-color 0.4s;
+        -webkit-transition: color 0.4s, background-color 0.4s;
+        -moz-webkit-transition: color 0.4s, background-color 0.4s;
+        -ms-webkit-transition: color 0.4s, background-color 0.4s;
+        -o-webkit-transition: color 0.4s, background-color 0.4s; }
+        body #about .about-container .about__title .social-box a li i {
+          padding: 10px; }
+      body #about .about-container .about__title .social-box a li:hover {
+        color: white;
+        background-color: steelblue; }
+    body #about .about-container .about__title .social-box.visible-for-small-only {
+      text-align: center; }
+      body #about .about-container .about__title .social-box.visible-for-small-only a {
+        margin: auto 5px; }
+    body #about .about-container .about__title .social-box.visible-for-medium-up {
+      margin-left: 25px; }
+      body #about .about-container .about__title .social-box.visible-for-medium-up a {
+        text-align: center;
+        float: left;
+        margin-right: 16px; }
+        body #about .about-container .about__title .social-box.visible-for-medium-up a:first-child {
+          margin-left: 20px; }
+  body #skills .section-body .skills-container .skills-panel {
+    display: block;
+    background-color: #f0f3f5; }
+    body #skills .section-body .skills-container .skills-panel .skills-list .skill-box {
+      display: flex;
+      display: -webkit-flex;
+      -webkit-flex-direction: row; }
+      body #skills .section-body .skills-container .skills-panel .skills-list .skill-box .full {
+        background-color: steelblue;
+        -webkit-flex-grow: 0.8; }
+      body #skills .section-body .skills-container .skills-panel .skills-list .skill-box .empty {
+        background-color: white;
+        -webkit-flex-grow: 0.2; }
+  body #portfolio .portfolio-list .site-container img {
+    width: 100%;
+    border: 1px solid black; }
+  body #education .education-list .education-container .year-container h1 {
+    display: inline-block;
+    float: right; }
+  body #work-experience .work-list .work-container .year-container h1 {
+    display: inline-block;
+    float: right; }
 
 /*# sourceMappingURL=main.css.map */

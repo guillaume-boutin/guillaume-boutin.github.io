@@ -9,49 +9,79 @@
 
 
     <!-- Oswald & Quattrocento -->
-    <!-- <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'> -->
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Quattrocento' rel='stylesheet' type='text/css'> -->
 
     <!-- Fjalla One and Average -->
     <!-- <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Average' rel='stylesheet' type='text/css'> -->
 
     <!-- Lato & Merriweather -->
-    <!-- <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'> -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'> -->
     <script src="js/vendor/modernizr.js"></script>
-    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/foundation.min.css" />
     <link rel="stylesheet" href="css/main.min.css" />
 
   </head>
   <body>
 
     <nav id="menu-bar">
-      <ul class="menu-list">
+      <ul class="menu-list visible-for-medium-up">
         <li><a href="">ABOUT</a></li>
         <li><a href="">SKILLS</a></li>
         <li><a href="">EDUCATION</a></li>
         <li><a href="">WORK EXPERIENCE</a></li>
         <li><a href="">PORTFOLIO</a></li>
+        <li><a href="">FRANÇAIS</a></li>
       </ul>
+      <ul class="menu-list visible-for-small-only">
+        <li><a><i class="fa fa-bars fa-lg"></i></a></li>
+      </ul>
+
     </nav>
+    <ul id="small-menu" class="menu-list">
+      <li><a href="">ABOUT</a></li>
+      <li><a href="">SKILLS</a></li>
+      <li><a href="">EDUCATION</a></li>
+      <li><a href="">WORK EXPERIENCE</a></li>
+      <li><a href="">PORTFOLIO</a></li>
+      <li><a href="">FRANÇAIS</a></li>
+    </ul>
+
+
 
     <header id="about">
       <div class="about-container row">
-        <div class="about__img columns small-12 large-5">
+        <div class="about__img columns small-12 medium-5">
           <img src="img/profilePic.jpg" alt="profile picture">
         </div>
-        <div class="about__title columns small-12 large-7">
-          <h1>GUILLAUME BOUTIN</h1>
-          <h2>WEB DEVELOPER</h2>
+        <div class="about__title columns small-12 medium-7">
+          <div class="title-box">
+            <h1>GUILLAUME BOUTIN</h1>
+            <h2>WEB DEVELOPER</h2>
+          </div>
+          <ul class="social-box visible-for-medium-up">
+            <a href="https://twitter.com/willyboy2101"><li><i class="fa fa-twitter fa-2x"></i></li></a>
+            <a href="https://github.com/guillaume-boutin"><li><i class="fa fa-github-alt fa-2x"></i></li></a>
+            <a href="https://www.linkedin.com/in/guillaume-boutin-1b225697"><li><i class="fa fa-linkedin fa-2x"></i></li></a>
+            <a><li><i class="fa fa-envelope-o fa-2x"></i></li></a>
+          </ul>
+          <ul class="social-box visible-for-small-only">
+            <a href="https://twitter.com/willyboy2101"><li><i class="fa fa-twitter fa-lg"></i></li></a>
+            <a href="https://github.com/guillaume-boutin"><li><i class="fa fa-github-alt fa-lg"></i></li></a>
+            <a href="https://www.linkedin.com/in/guillaume-boutin-1b225697"><li><i class="fa fa-linkedin fa-lg"></i></li></a>
+            <a><li><i class="fa fa-envelope-o fa-lg"></i></li></a>
+          </ul>
         </div>
         <div class="about__content columns small-12">
           <h3>About me</h3>
           <p>
-            My name is Guillaume and I currently live in Montreal for the last
+            My name is Guillaume and I've been currently living in Montreal for the last
             year. I graduated with a bachelor's degree in physics from the
             Université du Québec à Trois-Rivières in 2010, and a bachelor's
-            degree in Physics Engineering form the Université Laval in 2013. I
+            degree in Physics Engineering from the Université Laval in 2013. I
             have been reorienting my career towards web development during the
             last 4 months, and attended DecodeMTL bootcamp in order to get to
             know the industry better.
@@ -64,27 +94,27 @@
             realization that back in my college years, the times I was most
             enjoying myself were when I was typing my scientific reports, or
             when I had to write some simulation scripts in Matlab, and that I
-            might make a career out of this. When i'm not coding, i keep myself
+            might make a career out of this. When i'm not coding, I keep myself
             busy with quite a few other
-            things, first one being self-learning. If i'm not on Youtube
-            watching some tutorial on coding, i will be on Memrise learning
+            things, first one being self-learning. If I'm not on Youtube
+            watching some tutorial on coding, I will be on Memrise learning
             Spanish, or on Youtube again watching some other tutorial about
             playing the guitar.
           </p>
           <h3>Hobbies and further projects</h3>
           <p>
-            Along with being an amateur musician, i'm also a DIY electronician
+            Along with being an amateur musician, I'm also a DIY electronician
             hobbyist. I design with DipTrace my own printed circuit boards, that
             I etch myself, and then assemble the whole circuit with a soldering
             iron. I also simulate some of my circuits with LtSpice in order to
             put some of my own modifications into them.
           </p>
           <p>
-            Professionally-wise, I beleive the next thing I want to lear is PHP.
-            Even after being in usage for more than 20 years, it still to seem
-            a trusty and relevant language to learn, and to be a good-to-have
+            Professionally-wise, I beleive the next thing I want to learn is PHP.
+            Even after being in use for more than 20 years, it still seems to
+            be a trusty and relevant language to learn, and to be a good-to-have
             skill. Personnaly-wise, I would like to dig into Arduino in order
-            to start to include some coding into my electronic activies, and
+            to start to include some coding into my electronic activities, and
             when I learned that there are now some libraries such as Johnny-Five
             to code from NodeJs to Arduino, it already gave me one or two ideas
             of projects I would want to make.
@@ -96,140 +126,203 @@
     </header>
 
     <section id="portfolio">
+      <div class="head-icon">
+        <i class="fa fa-folder-open-o fa-2x"></i>
+      </div>
+      <div class="section-head">
         <h1>PORTFOLIO</h1>
+      </div>
+      <div class="section-body">
         <ul class="portfolio-list large-block-grid-3 medium-block-grid-2 small-block-grid-1">
-          <li class="site-container"><a href='#'><img src="img/profilePic.jpg" alt="profile picture"></a></li>
-          <li class="site-container"><a href='#'><img src="img/profilePic.jpg" alt="profile picture"></a></li>
-          <li class="site-container"><a href='#'><img src="img/profilePic.jpg" alt="profile picture"></a></li>
-          <li class="site-container"><a href='#'><img src="img/profilePic.jpg" alt="profile picture"></a></li>
-          <li class="site-container"><a href='#'><img src="img/profilePic.jpg" alt="profile picture"></a></li>
+          <li class="site-container"><a href='http://codepen.io/guillaume-boutin/full/YXLoJB/'><img src="screenshots/RandomQuoteGenerator.jpg" alt="profile picture"></a></li>
+          <li class="site-container"><a href='#'><img src="screenshots/TwitchTVUsers.jpg" alt="profile picture"></a></li>
+          <li class="site-container"><a href='#'><img src="screenshots/WikipediaViewer.jpg" alt="profile picture"></a></li>
+          <li class="site-container"><a href='#'><img src="screenshots/FreeCodeCampNews.jpg" alt="profile picture"></a></li>
+          <li class="site-container"><a href='#'><img src="screenshots/PomodoroClock.jpg" alt="profile picture"></a></li>
         </ul>
         <p>All those projects are Free Code Camp projects in their cursus. You can what have a look at my profile here.</p>
         <p>Furthermore, you also can look at my github account here.</p>
+      </div>
+
     </section>
 
-    <section id="skills columns small-12">
-      <h1>MY SKILLS</h1>
-      <div class="skills-container row" data-equalizer>
-        <div class="skills-panel columns panel large-6 medium-12 small-12" data-equalizer-watch>
-          <h1>Front End</h1>
-          <ul class="skills-list">
-            <li>Javascript</li>
-            <li>NodeJs</li>
-            <li>ExpressJs</li>
-            <li>MySQL</li>
-            <li>MongoDb</li>
-          </ul>
+    <section id="skills" class="columns small-12">
+      <div class="head-icon"><i class="fa fa-magic fa-2x"></i></div>
+      <div class="section-head">
+        <h1>SKILLS</h1>
+      </div>
+      <div class="section-body">
+        <div class="skills-container row" data-equalizer>
+          <div class="skills-panel columns panel large-6 medium-12 small-12" data-equalizer-watch>
+            <h1>Front End</h1>
+            <ul class="skills-list">
+              <li class="skill-box">
+                <div class="full">Html/Css</div><div class="empty"></div>
+              </li>
+              <li class="skill-box">
+                <div class="full">Jquery</div><div class="empty"></div>
+              </li>
+              <li class="skill-box">
+                <div class="full">Sass</div><div class="empty"></div>
+              </li>
+              <li class="skill-box">
+                <div class="full">Foundation</div><div class="empty"></div>
+              </li>
+              <li class="skill-box">
+                <div class="full">Bootstarp</div><div class="empty"></div>
+              </li>
+            </ul>
+          </div>
+          <div class="skills-panel columns panel large-6 medium-12 small-12" data-equalizer-watch>
+            <h1>Back End</h1>
+            <ul class="skills-list">
+              <li class="skill-box">
+                <div class="full">Javascript</div><div class="empty"></div>
+              </li>
+              <li class="skill-box">
+                <div class="full">NodeJs</div><div class="empty"></div>
+              </li>
+              <li class="skill-box">
+                <div class="full">ExpressJs</div><div class="empty"></div>
+              </li>
+              <li class="skill-box">
+                <div class="full">MySQL</div><div class="empty"></div>
+              </li>
+              <li class="skill-box">
+                <div class="full">MongoDb</div><div class="empty"></div>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="skills-panel columns panel large-6 medium-12 small-12" data-equalizer-watch>
-          <h1>Back end</h1>
-          <ul class="skills-list">
-            <li>Html/Css</li>
-            <li>Jquery</li>
-            <li>Sass</li>
-            <li>Foundation</li>
-            <li>Bootstarp</li>
-          </ul>
-        </div>
-        <div class="skills-panel columns panel large-6 medium-12 small-12" data-equalizer-watch>
-          <h1>Development tools</h1>
-          <ul class="skills-list">
-            <li>Linux</li>
-            <li>Git/Github</li>
-            <li>Grunt</li>
-          </ul>
-        </div>
-        <div class="skills-panel columns panel large-6 medium-12 small-12" data-equalizer-watch>
-          <h1>Others</h1>
-          <ul class="skills-list">
-            <li>Matlab</li>
-            <li>LaTeX</li>
-            <li>Solidworks</li>
-            <li>LtSpice</li>
-            <li>DipTrace</li>
-            <li>Inkscape</li>
-          </ul>
+        <div class="skills-container row" data-equalizer>
+          <div class="skills-panel columns panel large-6 medium-12 small-12" data-equalizer-watch>
+            <h1>Development tools</h1>
+            <ul class="skills-list">
+              <li class="skill-box">
+                <div class="full">Linux</div><div class="empty"></div>
+              </li>
+              <li class="skill-box">
+                <div class="full">Git/Github</div><div class="empty"></div>
+              </li>
+              <li class="skill-box">
+                <div class="full">Grunt</div><div class="empty"></div>
+              </li>
+            </ul>
+          </div>
+          <div class="skills-panel columns panel large-6 medium-12 small-12" data-equalizer-watch>
+            <h1>Others</h1>
+            <ul class="skills-list">
+              <li class="skill-box">
+                <div class="full">Matlab</div><div class="empty"></div>
+              </li>
+              <li class="skill-box">
+                <div class="full">LaTeX</div><div class="empty"></div>
+              </li>
+              <li class="skill-box">
+                <div class="full">Solidworks</div><div class="empty"></div>
+              </li>
+              <li class="skill-box">
+                <div class="full">LtSpice</div><div class="empty"></div>
+              </li>
+              <li class="skill-box">
+                <div class="full">DipTrace</div><div class="empty"></div>
+              </li>
+              <li class="skill-box">
+                <div class="full">Inkscape</div><div class="empty"></div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="education">
-      <h1>EDUCATION</h1>
-      <ul class="education-list">
-        <li class="education-container row">
-          <div class="year-container columns small-4">
-            <h1>2015</h1>
-          </div>
-          <div class="course-container columns small-8">
-            <h2>Full-time web development bootcamp</h2>
-            <h3>DecodeMTL</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur vel eum eius assumenda! Impedit sit, atque ea distinctio voluptate magni quo earum deleniti nemo quisquam provident sapiente aperiam laudantium expedita?Ab illum accusantium velit nihil autem, cum tenetur eius necessitatibus odit laborum ratione molestias rem, provident voluptate, nulla ut sunt voluptatum earum, voluptatibus facilis ad? Fugiat sit inventore porro reiciendis!Nobis pariatur esse sint explicabo fuga ullam, itaque, dignissimos sit aliquam illum officia! Amet dolor accusantium repellendus atque, odio consequatur id, labore alias earum quo corrupti impedit, perferendis laudantium nostrum.</p>
-          </div>
-        </li>
-        <li class="education-container row">
-          <div class="year-container columns small-4">
-            <h1>2013</h1>
-          </div>
-          <div class="course-container columns small-8">
-            <h2>Engineering Physics Bachelor's Degree</h2>
-            <h3>Université Laval</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur vel eum eius assumenda! Impedit sit, atque ea distinctio voluptate magni quo earum deleniti nemo quisquam provident sapiente aperiam laudantium expedita?Ab illum accusantium velit nihil autem, cum tenetur eius necessitatibus odit laborum ratione molestias rem, provident voluptate, nulla ut sunt voluptatum earum, voluptatibus facilis ad? Fugiat sit inventore porro reiciendis!Nobis pariatur esse sint explicabo fuga ullam, itaque, dignissimos sit aliquam illum officia! Amet dolor accusantium repellendus atque, odio consequatur id, labore alias earum quo corrupti impedit, perferendis laudantium nostrum.</p>
-          </div>
-        </li>
-        <li class="education-container row">
-          <div class="year-container columns small-4">
-            <h1>2010</h1>
-          </div>
-          <div class="course-container columns small-8">
-            <h2>Physics Bachelor's Degree</h2>
-            <h3>UQTR</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur vel eum eius assumenda! Impedit sit, atque ea distinctio voluptate magni quo earum deleniti nemo quisquam provident sapiente aperiam laudantium expedita?Ab illum accusantium velit nihil autem, cum tenetur eius necessitatibus odit laborum ratione molestias rem, provident voluptate, nulla ut sunt voluptatum earum, voluptatibus facilis ad? Fugiat sit inventore porro reiciendis!Nobis pariatur esse sint explicabo fuga ullam, itaque, dignissimos sit aliquam illum officia! Amet dolor accusantium repellendus atque, odio consequatur id, labore alias earum quo corrupti impedit, perferendis laudantium nostrum.</p>
-          </div>
-        </li>
-      </ul>
-
+      <div class="head-icon"><i class="fa fa-graduation-cap fa-2x"></i></div>
+      <div class="section-head">
+        <h1>EDUCATION</h1>
+      </div>
+      <div class="section-body">
+        <ul class="education-list">
+          <li class="education-container row">
+            <div class="year-container columns small-12 medium-3">
+              <h1>2015</h1>
+            </div>
+            <div class="course-container columns small-12 medium-9">
+              <h2>Full-time web development bootcamp</h2>
+              <h3>DecodeMTL</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur vel eum eius assumenda! Impedit sit, atque ea distinctio voluptate magni quo earum deleniti nemo quisquam provident sapiente aperiam laudantium expedita?Ab illum accusantium velit nihil autem, cum tenetur eius necessitatibus odit laborum ratione molestias rem, provident voluptate, nulla ut sunt voluptatum earum, voluptatibus facilis ad? Fugiat sit inventore porro reiciendis!Nobis pariatur esse sint explicabo fuga ullam, itaque, dignissimos sit aliquam illum officia! Amet dolor accusantium repellendus atque, odio consequatur id, labore alias earum quo corrupti impedit, perferendis laudantium nostrum.</p>
+            </div>
+          </li>
+          <li class="education-container row">
+            <div class="year-container columns small-12 medium-3">
+              <h1>2013</h1>
+            </div>
+            <div class="course-container columns small-12 medium-9">
+              <h2>Engineering Physics Bachelor's Degree</h2>
+              <h3>Université Laval</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur vel eum eius assumenda! Impedit sit, atque ea distinctio voluptate magni quo earum deleniti nemo quisquam provident sapiente aperiam laudantium expedita?Ab illum accusantium velit nihil autem, cum tenetur eius necessitatibus odit laborum ratione molestias rem, provident voluptate, nulla ut sunt voluptatum earum, voluptatibus facilis ad? Fugiat sit inventore porro reiciendis!Nobis pariatur esse sint explicabo fuga ullam, itaque, dignissimos sit aliquam illum officia! Amet dolor accusantium repellendus atque, odio consequatur id, labore alias earum quo corrupti impedit, perferendis laudantium nostrum.</p>
+            </div>
+          </li>
+          <li class="education-container row">
+            <div class="year-container columns small-12 medium-3">
+              <h1>2010</h1>
+            </div>
+            <div class="course-container columns small-12 medium-9">
+              <h2>Physics Bachelor's Degree</h2>
+              <h3>UQTR</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur vel eum eius assumenda! Impedit sit, atque ea distinctio voluptate magni quo earum deleniti nemo quisquam provident sapiente aperiam laudantium expedita?Ab illum accusantium velit nihil autem, cum tenetur eius necessitatibus odit laborum ratione molestias rem, provident voluptate, nulla ut sunt voluptatum earum, voluptatibus facilis ad? Fugiat sit inventore porro reiciendis!Nobis pariatur esse sint explicabo fuga ullam, itaque, dignissimos sit aliquam illum officia! Amet dolor accusantium repellendus atque, odio consequatur id, labore alias earum quo corrupti impedit, perferendis laudantium nostrum.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section id="work-experience">
-      <h1>WORK EXPERIENCE</h1>
-      <ul class="work-list">
-        <li class="work-container row">
-          <div class="year-container columns small-4">
-            <h1>2014</h1>
-          </div>
-          <div class="job-container columns small-8">
-            <h2>Optical Engineer</h2>
-            <h3>Osela</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur vel eum eius assumenda! Impedit sit, atque ea distinctio voluptate magni quo earum deleniti nemo quisquam provident sapiente aperiam laudantium expedita?Ab illum accusantium velit nihil autem, cum tenetur eius necessitatibus odit laborum ratione molestias rem, provident voluptate, nulla ut sunt voluptatum earum, voluptatibus facilis ad? Fugiat sit inventore porro reiciendis!Nobis pariatur esse sint explicabo fuga ullam, itaque, dignissimos sit aliquam illum officia! Amet dolor accusantium repellendus atque, odio consequatur id, labore alias earum quo corrupti impedit, perferendis laudantium nostrum.</p>
-          </div>
-        </li>
-        <li class="work-container row">
-          <div class="year-container columns small-4">
-            <h1>2013</h1>
-          </div>
-          <div class="job-container columns small-8">
-            <h2>Student Final Project</h2>
-            <h3>Université Laval</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur vel eum eius assumenda! Impedit sit, atque ea distinctio voluptate magni quo earum deleniti nemo quisquam provident sapiente aperiam laudantium expedita?Ab illum accusantium velit nihil autem, cum tenetur eius necessitatibus odit laborum ratione molestias rem, provident voluptate, nulla ut sunt voluptatum earum, voluptatibus facilis ad? Fugiat sit inventore porro reiciendis!Nobis pariatur esse sint explicabo fuga ullam, itaque, dignissimos sit aliquam illum officia! Amet dolor accusantium repellendus atque, odio consequatur id, labore alias earum quo corrupti impedit, perferendis laudantium nostrum.</p>
-          </div>
-        </li>
-        <li class="work-container row">
-          <div class="year-container columns small-4">
-            <h1>2012</h1>
-          </div>
-          <div class="job-container columns small-8">
-            <h2>Summer Internship</h2>
-            <h3>COPL</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur vel eum eius assumenda! Impedit sit, atque ea distinctio voluptate magni quo earum deleniti nemo quisquam provident sapiente aperiam laudantium expedita?Ab illum accusantium velit nihil autem, cum tenetur eius necessitatibus odit laborum ratione molestias rem, provident voluptate, nulla ut sunt voluptatum earum, voluptatibus facilis ad? Fugiat sit inventore porro reiciendis!Nobis pariatur esse sint explicabo fuga ullam, itaque, dignissimos sit aliquam illum officia! Amet dolor accusantium repellendus atque, odio consequatur id, labore alias earum quo corrupti impedit, perferendis laudantium nostrum.</p>
-          </div>
-        </li>
-      </ul>
+      <div class="head-icon"><i class="fa fa-briefcase fa-2x"></i></div>
+      <div class="section-head">
+        <h1>WORK EXPERIENCE</h1>
+      </div>
+      <div class="section-body">
+        <ul class="work-list">
+          <li class="work-container row">
+            <div class="year-container columns small-4">
+              <h1>2014</h1>
+            </div>
+            <div class="job-container columns small-8">
+              <h2>Optical Engineer</h2>
+              <h3>Osela</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur vel eum eius assumenda! Impedit sit, atque ea distinctio voluptate magni quo earum deleniti nemo quisquam provident sapiente aperiam laudantium expedita?Ab illum accusantium velit nihil autem, cum tenetur eius necessitatibus odit laborum ratione molestias rem, provident voluptate, nulla ut sunt voluptatum earum, voluptatibus facilis ad? Fugiat sit inventore porro reiciendis!Nobis pariatur esse sint explicabo fuga ullam, itaque, dignissimos sit aliquam illum officia! Amet dolor accusantium repellendus atque, odio consequatur id, labore alias earum quo corrupti impedit, perferendis laudantium nostrum.</p>
+            </div>
+          </li>
+          <li class="work-container row">
+            <div class="year-container columns small-4">
+              <h1>2013</h1>
+            </div>
+            <div class="job-container columns small-8">
+              <h2>Student Final Project</h2>
+              <h3>Université Laval</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur vel eum eius assumenda! Impedit sit, atque ea distinctio voluptate magni quo earum deleniti nemo quisquam provident sapiente aperiam laudantium expedita?Ab illum accusantium velit nihil autem, cum tenetur eius necessitatibus odit laborum ratione molestias rem, provident voluptate, nulla ut sunt voluptatum earum, voluptatibus facilis ad? Fugiat sit inventore porro reiciendis!Nobis pariatur esse sint explicabo fuga ullam, itaque, dignissimos sit aliquam illum officia! Amet dolor accusantium repellendus atque, odio consequatur id, labore alias earum quo corrupti impedit, perferendis laudantium nostrum.</p>
+            </div>
+          </li>
+          <li class="work-container row">
+            <div class="year-container columns small-4">
+              <h1>2012</h1>
+            </div>
+            <div class="job-container columns small-8">
+              <h2>Summer Internship</h2>
+              <h3>COPL</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur vel eum eius assumenda! Impedit sit, atque ea distinctio voluptate magni quo earum deleniti nemo quisquam provident sapiente aperiam laudantium expedita?Ab illum accusantium velit nihil autem, cum tenetur eius necessitatibus odit laborum ratione molestias rem, provident voluptate, nulla ut sunt voluptatum earum, voluptatibus facilis ad? Fugiat sit inventore porro reiciendis!Nobis pariatur esse sint explicabo fuga ullam, itaque, dignissimos sit aliquam illum officia! Amet dolor accusantium repellendus atque, odio consequatur id, labore alias earum quo corrupti impedit, perferendis laudantium nostrum.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/foundation/foundation.equalizer.js"></script>
+    <script src="js/main.js"></script>
 
     <script>
       $(document).foundation();
