@@ -1,14 +1,8 @@
-$steel: hsl(207,44,49);
+$steel: hsl(207,44,65);
 $palesteel: hsl(207,20,95);
-$grayheader: #777;
+$grayheader: #666;
 
 body {
-  // defauls size for 1em is 16px
-  // * {font-size: 16px;}
-
-  // & > * {
-  //   margin: auto 10%;
-  // }
 
   p {
     text-align: justify;
@@ -21,6 +15,15 @@ body {
 
   ul {
     list-style: none;
+  }
+
+  h1, h2, h3 {
+    font-family: Oswald;
+    color: $grayheader;
+  }
+
+  .panel {
+    background-color: $palesteel;
   }
 
   #menu-bar {
@@ -81,7 +84,7 @@ body {
         border: 1px solid lightgray;
         border-bottom: none;
         border-radius: 50% 50% 0 0;
-        background-color: steelblue;
+        background-color: $steel;
 
       }
     }
@@ -142,7 +145,7 @@ body {
           h2 {
             font-family: 'Oswald';
             font-weight: 300;
-            color: steelblue;
+            color: $steel;
           }
           @media only screen and (max-width: 40em) {
             text-align: center;
@@ -168,7 +171,7 @@ body {
               display: inline-block;
               border: 1px solid lightgray;
               border-radius: 50%;
-              color: steelblue;
+              color: $steel;
               background-color: white;
               box-shadow: 3px 3px 4px #aaa;
               transition: color 0.4s, background-color 0.4s;
@@ -183,7 +186,7 @@ body {
             }
             li:hover {
               color: white;
-              background-color: steelblue;
+              background-color: $steel;
             }
 
           }
@@ -217,31 +220,159 @@ body {
 
     .section-body {
       .skills-container {
-        .skills-panel {
-          display: block;
-          background-color: $palesteel;
-          .skills-list {
-            .skill-box {
-              display: flex;
-              display: -webkit-flex;
-              -webkit-flex-direction: row;
+        max-width: none;
+        .skills-column {
+          position: relative;
+          height: 100%;
+          .skills-panel {
+            h1 {
+              color: $grayheader;
+            }
+            display: block;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            .skills-list {
+              .skill-box {
+                margin-bottom: 20px;
+                display: flex;
+                display: -webkit-flex;
+                -webkit-flex-direction: row;
 
-              .full {
-                background-color: $steel;
-                -webkit-flex-grow: 0.8;
-                // box-flex: 8;
+                .full {
+                  color: white;
+                  background-color: $steel;
+                  -webkit-flex-grow: 0.8;
+                  // box-flex: 8;
+                  span {
+                    display: inline-block;
+                    padding: 5px 0 5px 15px;
+                  }
+
+                }
+                .empty {
+                  background-color: white;
+                  -webkit-flex-grow: 0.2;
+                  // box-flex: 2;
+                }
               }
-              .empty {
-                background-color: white;
-                -webkit-flex-grow: 0.2;
-                // box-flex: 2;
+              .skill-box:last-child {
+                margin-bottom: 0;
               }
             }
+          }
+        }
+        .skills-column:first-child {
 
+          @media screen and (min-width: 64.063em) {
+            padding: 0 8px 0 0;
+          }
+        }
+        .skills-column:last-child {
 
+          @media screen and (min-width: 64.063em) {
+            padding: 0 0 0 8px;
           }
         }
       }
+      //Front End and Back end panels
+      .skills-container:nth-child(1) {
+        //Fron end panel
+        .skills-panel:nth-child(1) {
+          .skill-box:nth-child(1) {
+            .full {-webkit-flex-grow: 0.92;}
+            .empty {-webkit-flex-grow: 0.08;}
+          }
+          .skill-box:nth-child(2) {
+            .full {-webkit-flex-grow: 0.85;}
+            .empty {-webkit-flex-grow: 0.15;}
+          }
+          .skill-box:nth-child(3) {
+            .full {-webkit-flex-grow: 0.65;}
+            .empty {-webkit-flex-grow: 0.35;}
+          }
+          .skill-box:nth-child(4) {
+            .full {-webkit-flex-grow: 0.75;}
+            .empty {-webkit-flex-grow: 0.25;}
+          }
+          .skill-box:nth-child(5) {
+            .full {-webkit-flex-grow: 0.7;}
+            .empty {-webkit-flex-grow: 0.3;}
+          }
+        }
+        .skills-panel:nth-child(1).large-6 {
+          // width: 90%;
+        }
+        //Back end panel
+        .skills-panel:nth-child(2) {
+          .skill-box:nth-child(1) {
+            .full {-webkit-flex-grow: 0.95;}
+            .empty {-webkit-flex-grow: 0.05;}
+          }
+          .skill-box:nth-child(2) {
+            .full {-webkit-flex-grow: 0.70;}
+            .empty {-webkit-flex-grow: 0.30;}
+          }
+          .skill-box:nth-child(3) {
+            .full {-webkit-flex-grow: 0.60;}
+            .empty {-webkit-flex-grow: 0.40;}
+          }
+          .skill-box:nth-child(4) {
+            .full {-webkit-flex-grow: 0.82;}
+            .empty {-webkit-flex-grow: 0.18;}
+          }
+          .skill-box:nth-child(5) {
+            .full {-webkit-flex-grow: 0.73;}
+            .empty {-webkit-flex-grow: 0.27;}
+          }
+        }
+      }
+      //Development tools Others panels
+      .skills-container:nth-child(2) {
+        //Development tools panel
+        .skills-panel:nth-child(1) {
+          .skill-box:nth-child(1) {
+            .full {-webkit-flex-grow: 0.85;}
+            .empty {-webkit-flex-grow: 0.15;}
+          }
+          .skill-box:nth-child(2) {
+            .full {-webkit-flex-grow: 0.75;}
+            .empty {-webkit-flex-grow: 0.25;}
+          }
+          .skill-box:nth-child(3) {
+            .full {-webkit-flex-grow: 0.70;}
+            .empty {-webkit-flex-grow: 0.30;}
+          }
+        }
+        //Others panel
+        .skills-panel:nth-child(2) {
+          .skill-box:nth-child(1) {
+            .full {-webkit-flex-grow: 0.92;}
+            .empty {-webkit-flex-grow: 0.08;}
+          }
+          .skill-box:nth-child(2) {
+            .full {-webkit-flex-grow: 0.88;}
+            .empty {-webkit-flex-grow: 0.12;}
+          }
+          .skill-box:nth-child(3) {
+            .full {-webkit-flex-grow: 0.62;}
+            .empty {-webkit-flex-grow: 0.38;}
+          }
+          .skill-box:nth-child(4) {
+            .full {-webkit-flex-grow: 0.78;}
+            .empty {-webkit-flex-grow: 0.22;}
+          }
+          .skill-box:nth-child(5) {
+            .full {-webkit-flex-grow: 0.71;}
+            .empty {-webkit-flex-grow: 0.29;}
+          }
+          .skill-box:nth-child(6) {
+            .full {-webkit-flex-grow: 0.82;}
+            .empty {-webkit-flex-grow: 0.18;}
+          }
+        }
+
+      }
+
     }
   }
 
@@ -257,28 +388,47 @@ body {
     }
   }
 
-  #education {
+  #education, #work-experience {
 
-    .education-list {
-      .education-container {
-        .year-container {
+    .topic-list {
+      margin: 0;
+      .topic-container {
+        .topic-year {
+          padding: 0;
           h1 {
             display: inline-block;
             float: right;
+            border: 1px solid lightgray;
+            margin: 0;
+            background-color: $steel;
+            color: white;
+            font-size: 2em;
+            @media screen and (max-width: 40em) {
+              padding: 5px 10px 0 10px;
+              border-radius: 30px 30px 0 0;
+              border-bottom: none;
+            }
+            @media screen and (min-width: 40.063em) {
+              padding: 0 10px 0 20px;
+              border-radius: 30px 0 0 30px;
+              border-right: none;
+            }
           }
         }
-      }
-    }
-  }
-
-  #work-experience {
-
-    .work-list {
-      .work-container {
-        .year-container {
+        .topic-content {
           h1 {
-            display: inline-block;
-            float: right;
+            color: $grayheader;
+          }
+          h2 {
+            color: $steel;
+            font-weight: 100;
+          }
+          border: 1px solid lightgray;
+          @media screen and (max-width: 40em) {
+            border-radius: 10px 0 10px 10px;
+          }
+          @media screen and (min-width: 40.063em) {
+            border-radius: 0 10px 10px 10px;
           }
         }
       }
