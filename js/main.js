@@ -14,4 +14,9 @@ $('#menu-bar .menu-list.visible-for-small-only li a').click( function() {
     barClicked = true;
   }
 
+});
+
+$('#small-menu a').click( function() {
+  $('#small-menu').hide();
+  barClicked = false;
 })
