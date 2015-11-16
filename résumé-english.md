@@ -1,7 +1,7 @@
-<h1 align="center">Guillaume Boutin</h1>
-<h2 align="center">Web developer</h2>
-<p align="center"><strong>Phone</strong> 514 604-8222</p>
-<p align="center"><strong>Email</strong> guillaumeboutin2101@gmail.com</p>
+# Guillaume BOUTIN
+# Web developer
+514 604 8222
+guillaumeboutin@yandex.com
 
 ##   TECHNICAL SKILLS
 - - -
