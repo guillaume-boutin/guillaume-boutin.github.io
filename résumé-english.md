@@ -1,6 +1,8 @@
 # Guillaume BOUTIN
 # Web developer
+
 514 604 8222
+
 guillaumeboutin@yandex.com
 
 ##   TECHNICAL SKILLS
