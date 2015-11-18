@@ -1,7 +1,7 @@
 # Guillaume BOUTIN
 # Web developer
 
-514 604 8222
+(514) 604-8222
 
 guillaumeboutin@yandex.com
 
@@ -81,4 +81,4 @@ Home making of guitar effects pedals
 *   Draw decorative stickers with Inkscape
 
 ### Guitar
-Self teaching to play the guitar since 2008.
+Self teaching (read here "via Youtube") to play the guitar since 2008.
