@@ -1,11 +1,9 @@
 # Guillaume BOUTIN
-# Développeur web
+# Web developer
 
 (514) 604-8222
 
-guillaume.boutin@yandex.com
-
-www.guillaumeboutin.xyz
+guillaumeboutin@yandex.com
 
 ##   CONAISSANCE TECHNIQUES
 - - -
@@ -18,7 +16,7 @@ Html, Css, Jquery, Sass, Foundation, Bootstrap
 ### Development tools
 Linux, Git/Github, Grunt
 
-### Autre
+### Others
 LaTeX, Matlab, Solidworkds, LtSpice, DipTrace, Inkscape
 - - -
 
@@ -42,25 +40,25 @@ du cours peuvent se trouver [ici](http://www.decodemtl.com/web-development-full-
 
 ##  EXPÉRIENCE DE TRAVAIL
 
-### Ingénieur optique
+### Optical Engineer
 **Osela**, Lachine (2014)
 
 *   Expérimenter et optimiser les couches anti-reflets des lentilles ayant sur les lasers.
 *   Calibrer les appareils de mesure sur les planchers de production.
 *   Écrire un programme Matlab pour calculer les distances de Hammings de patrons aléatoires en vue d'être gravés dans des résaux de diffraction.
 
-### Projet de fin d'étude
+### Student Final Project
 **Université Laval**, Ste-Foy (2013)
 
 Dessiner avec Solidworks un système mécanique de stabilisation pour un laser à haute puissance utiliser pour graver et scanner différents échantillons.
 
-### Stage d'été
+### Summer Internship
 **Centre d'Optique Photonique et Laser**, Ste-Foy (2012)
 
 *   Développer un recette empirique de fabrication de coupleurs à fibres optiques pour deux longueur d'onde dans le spectre visible.
 *   Écrire un programme Matlab pour simuler le couplage pour différentes longueurs d'onde.
 
-### Tuteur privé
+### Private tutor
 **Service Privé d'Aide aux Études** (2013 - present)
 
 Tuteur privé aidant à domicile des étudiants en difficultés dans certaines matières. J'ai aidé plusieurs étudiant pour:
@@ -70,14 +68,14 @@ Tuteur privé aidant à domicile des étudiants en difficultés dans certaines m
 
 - - -
 
-##  Acitivités et occupations
-### Électronicien DIY amateur
+##  ACTIVITIES AND HOBBIES
+### DIY Amateur Electronician
 
-Fabrication artisanale de pédales d'effets pour guitare électrique.
-*   Design et simulation des circuits sour LtSpice.
-*   Desing du circuit imprimé sous DipTrace.
-*   Etching chimique du circuit imprimé et assemblage des composantes au fer à souder.
-*   Dessiner des autocollants décoratifs avec Inkscape.
+Home making of guitar effects pedals
+*   Designing and simulating circuits with LtSpice
+*   Draw printed circuit board layout with DipTrace
+*   Etch the printed circuit boards and solder components
+*   Draw decorative stickers with Inkscape
 
-### Guitare
+### Guitar
 Apprentissage auto-didacte (lire ici "via Youtube") de la guitare depuis 2008.

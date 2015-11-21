@@ -3,9 +3,7 @@
 
 (514) 604-8222
 
-guillaume.boutin@yandex.com
-
-www.guillaumeboutin.xyz
+guillaumeboutin@yandex.com
 
 ##   TECHNICAL SKILLS
 - - -
