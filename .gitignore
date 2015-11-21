@@ -1,2 +1,5 @@
-vi ~/.gitignore
 .sass-cache
+
+css/foundation.css
+css/main.css.map
+css/main.css
