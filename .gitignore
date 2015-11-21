@@ -1,2 +1,2 @@
 vi ~/.gitignore
-./.sass-cache/
+vi ~/.sass-cache/*
