@@ -1,5 +1,5 @@
 # Guillaume BOUTIN
-# Web developer
+### Web developer
 
 (514) 604-8222
 
@@ -10,10 +10,10 @@ www.guillaumeboutin.xyz
 ##   TECHNICAL SKILLS
 - - -
 ###  Back-end
-Javascript, Nodejs, Expressjs, MySQL, MongoDb
+Javascript, Nodejs, Expressjs, MySQL, MongoDb, Mochajs
 
 ### Front-end
-Html, Css, Jquery, Sass, Foundation, Bootstrap
+Html, Css, Jquery, Sass, Foundation, Bootstrap, React
 
 ### Development tools
 Linux, Git/Github, Grunt
@@ -29,7 +29,9 @@ LaTeX, Matlab, Solidworkds, LtSpice, DipTrace, Inkscape
 Intensive 8 weeks web development bootcamp where we are thaught all the basics
 of back-end/front-end development, as well as some useful developing tools. More
 informations about the curiculum can be found
-[here](http://www.decodemtl.com/web-development-full-time/).
+here:
+
+http://www.decodemtl.com/web-development-full-time/
 
 ### Physics Engineering Bachelor's Degree
 **Université Laval** 2013
@@ -39,7 +41,22 @@ informations about the curiculum can be found
 
 - - -
 
+##  PERSONAL PROJECTS
+**Share your goal online** (2015)
+A single-page app I wrote for Golcast, where you set yourself a goal, display it
+on an image, and it automatically posts the personalised image on your Facebook
+wall. All of this is compliant with Facebook policies.
+
+http://www.goalcast.it
+
+- - -
+
 ##  WORK EXPERIENCE
+**Sofdesk**, Montreal (2016)
+
+*   Writing test scripts for the resources of the backend with mocha.js.
+*   Writting financial wrappers for analysing government incentives.
+*   Frontend develpment with React.js.
 
 ### Optical Engineer
 **Osela**, Lachine (2014)
