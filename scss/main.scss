@@ -1,0 +1,503 @@
+$steel: hsl(207,44,65);
+$palesteel: hsl(207,20,95);
+$grayheader: #666;
+
+@mixin display-flex {
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  display: -moz-flex;
+  -moz-flex-direction: row;
+  display: -ms-flex;
+  -ms-flex-direction: row;
+  display: -o-flex;
+  -o-flex-direction: row;
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-grow($ratio) {
+  -webkit-flex-grow: $ratio;
+  -moz-flex-grow: $ratio;
+  -ms-flex-grow: $ratio;
+  -o-flex-grow: $ratio;
+  flex-grow: $ratio;
+}
+
+
+
+body {
+
+  p {
+    text-align: justify;
+  }
+
+  p, li {
+    font-family: Lato, sans-serif;
+  }
+  position: relative;
+
+  ul {
+    list-style: none;
+  }
+
+  h1, h2, h3 {
+    font-family: Oswald;
+    color: $grayheader;
+  }
+
+  .panel {
+    background-color: $palesteel;
+  }
+
+  #menu-bar {
+    overflow: hidden;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 20px;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index:99;
+
+    .menu-list {
+      float: right;
+      margin: 0;
+      li {
+        display: inline-block;
+        float: left;
+        background-color: white;
+        a{
+          color: black;
+        }
+        a:hover {
+          color: $steel;
+        }
+      }
+    }
+    .menu-list.visible-for-small-only {
+      a {
+        color: black;
+      }
+      a:hover {
+        color: black;
+      }
+    }
+
+  }
+  #small-menu {
+    overflow: hidden;
+    position: fixed;
+    border: 1px solid black;
+    background-color: white;
+    z-index: 99;
+    margin: 0;
+    right: 0;
+    top: 37px;
+    display: none;
+    @media only screen and (min-width: 40.063em) {
+      display: none;
+    }
+    a {
+      color: black;
+    }
+    a:hover {
+      color: $steel;
+    }
+  }
+
+  .menu-list {
+    li {
+      font-size: 0.7em;
+      padding: 10px;
+    }
+  }
+
+  #about, #portfolio, #skills, #education, #work-experience {
+    padding: 0;
+  }
+
+  section {
+
+    .head-icon {
+      display: block;
+      text-align: center;
+      i {
+        padding: 15px 15px 5px 15px;
+        color: white;
+        display: inline-block;
+        border: 1px solid lightgray;
+        border-bottom: none;
+        border-radius: 50% 50% 0 0;
+        background-color: $steel;
+
+      }
+    }
+
+    .section-head {
+      text-align: center;
+      background-color: $palesteel;
+      margin-bottom: 50px;
+      border-top: 1px solid lightgray;
+
+      h1 {
+        margin: 0;
+        margin-bottom: 10px;
+        padding: 20px 0;
+        font-family: Oswald;
+        color: $grayheader;
+
+      }
+
+    }
+
+    .section-body {
+      padding: 0 20px 0 20px;
+    }
+
+  }
+
+  #about {
+    padding-top: 70px;
+
+    .about-container {
+      .about__img {
+        img {
+          display: inline-block;
+          width: 200px;
+          border-radius: 50%;
+          border: 1px solid lightgrey;
+          box-shadow: 3px 3px 4px #aaa;
+
+          @media only screen and (min-width: 40.063em) {
+            float: right;
+          }
+
+          @media screen and (max-width: 40em) {
+            clear: both;
+          }
+        }
+        @media screen and (max-width: 40em) {
+          text-align: center;
+        }
+      }
+      .about__title {
+        .title-box {
+          h1 {
+            font-family: 'Oswald';
+            color: $grayheader;
+          }
+          h2 {
+            font-family: 'Oswald';
+            font-weight: 300;
+            color: $steel;
+          }
+          @media only screen and (max-width: 40em) {
+            text-align: center;
+          }
+          @media only screen and (min-width: 40.063em) {
+            display: inline-block;
+            float: left;
+            text-align: center;
+          }
+        }
+        .social-box {
+          display: block;
+          clear: both;
+          a {
+            li {
+              display: inline-block;
+              border: 1px solid lightgray;
+              border-radius: 50%;
+              color: $steel;
+              background-color: white;
+              box-shadow: 3px 3px 4px #aaa;
+              transition: color 0.4s, background-color 0.4s;
+              -webkit-transition: color 0.4s, background-color 0.4s;
+              -moz-webkit-transition: color 0.4s, background-color 0.4s;
+              -ms-webkit-transition: color 0.4s, background-color 0.4s;
+              -o-webkit-transition: color 0.4s, background-color 0.4s;
+
+              i {
+                padding: 10px;
+              }
+            }
+            li:hover {
+              color: white;
+              background-color: $steel;
+            }
+
+          }
+
+        }
+        .social-box.visible-for-small-only {
+          text-align: center;
+          a {
+            margin: auto 5px;
+          }
+        }
+        .social-box.visible-for-medium-up {
+          margin-left: 25px;
+          a {
+            text-align: center;
+            float: left;
+            margin-right: 16px;
+            i {
+
+            }
+            &:first-child {
+              margin-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #portfolio {
+
+    .portfolio-list {
+      .site-item {
+        a {
+          .img-container {
+            position: relative;
+            .img-overlay {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background-color: rgba(black, 0.6);
+              -webkit-transition: background-color 0.4s;
+              -moz-webkit-transition: background-color 0.4s;
+              -ms-webkit-transition: background-color 0.4s;
+              -o-webkit-transition: background-color 0.4s;
+              transition: background-color 0.4s;
+
+              h3 {
+                text-align: center;
+                margin-top: 15%;
+                color: white;
+              }
+              p {
+                text-align: center;
+                margin: 10px 8px 0 8px;
+                color: white;
+              }
+            }
+            img {
+              width: 100%;
+            }
+          }
+        }
+        a:hover {
+          & .img-overlay {
+            background-color: rgba(steelblue, 0.6);
+          }
+        }
+      }
+    }
+  }
+
+  #skills {
+
+    .section-body {
+      .skills-container {
+        max-width: none;
+        .skills-column {
+          position: relative;
+          height: 100%;
+          .skills-panel {
+            h1 {
+              color: $grayheader;
+            }
+            display: block;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            .skills-list {
+              .skill-box {
+                margin-bottom: 20px;
+                @include display-flex;
+                .full {
+                  color: white;
+                  background-color: $steel;
+                  span {
+                    display: inline-block;
+                    padding: 5px 0 5px 15px;
+                  }
+
+                }
+                .empty {
+                  background-color: white;
+                }
+              }
+              .skill-box:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
+        }
+        .skills-column:first-child {
+
+          @media screen and (min-width: 64.063em) {
+            padding: 0 8px 0 0;
+          }
+        }
+        .skills-column:last-child {
+
+          @media screen and (min-width: 64.063em) {
+            padding: 0 0 0 8px;
+          }
+        }
+      }
+      //Front End and Back end panels
+      .skills-container:nth-child(1) {
+        //Fron end panel
+        .skills-column:nth-child(1) {
+          .skill-box:nth-child(1) {
+            .full {@include flex-grow(0.92);}
+            .empty {@include flex-grow(0.08);}
+          }
+          .skill-box:nth-child(2) {
+            .full {@include flex-grow(0.85);}
+            .empty {@include flex-grow(0.15);}
+          }
+          .skill-box:nth-child(3) {
+            .full {@include flex-grow(0.65);}
+            .empty {@include flex-grow(0.35);}
+          }
+          .skill-box:nth-child(4) {
+            .full {@include flex-grow(0.75);}
+            .empty {@include flex-grow(0.25);}
+          }
+          .skill-box:nth-child(5) {
+            .full {@include flex-grow(0.7);}
+            .empty {@include flex-grow(0.3);}
+          }
+        }
+        //Back end panel
+        .skills-column:nth-child(2) {
+          .skill-box:nth-child(1) {
+            .full {@include flex-grow(0.95);}
+            .empty {@include flex-grow(0.05);}
+          }
+          .skill-box:nth-child(2) {
+            .full {@include flex-grow(0.70);}
+            .empty {@include flex-grow(0.30);}
+          }
+          .skill-box:nth-child(3) {
+            .full {@include flex-grow(0.60);}
+            .empty {@include flex-grow(0.40);}
+          }
+          .skill-box:nth-child(4) {
+            .full {@include flex-grow(0.82);}
+            .empty {@include flex-grow(0.18);}
+          }
+          .skill-box:nth-child(5) {
+            .full {@include flex-grow(0.73);}
+            .empty {@include flex-grow(0.27);}
+          }
+        }
+      }
+      //Development tools Others panels
+      .skills-container:nth-child(2) {
+        //Development tools panel
+        .skills-column:nth-child(1) {
+          .skill-box:nth-child(1) {
+            .full {@include flex-grow(0.85);}
+            .empty {@include flex-grow(0.15);}
+          }
+          .skill-box:nth-child(2) {
+            .full {@include flex-grow(0.75);}
+            .empty {@include flex-grow(0.25);}
+          }
+          .skill-box:nth-child(3) {
+            .full {@include flex-grow(0.70);}
+            .empty {@include flex-grow(0.30);}
+          }
+        }
+        //Others panel
+        .skills-column:nth-child(2) {
+          .skill-box:nth-child(1) {
+            .full {@include flex-grow(0.92);}
+            .empty {@include flex-grow(0.08);}
+          }
+          .skill-box:nth-child(2) {
+            .full {@include flex-grow(0.88);}
+            .empty {@include flex-grow(0.12);}
+          }
+          .skill-box:nth-child(3) {
+            .full {@include flex-grow(0.62);}
+            .empty {@include flex-grow(0.38);}
+          }
+          .skill-box:nth-child(4) {
+            .full {@include flex-grow(0.78);}
+            .empty {@include flex-grow(0.22);}
+          }
+          .skill-box:nth-child(5) {
+            .full {@include flex-grow(0.71);}
+            .empty {@include flex-grow(0.29);}
+          }
+          .skill-box:nth-child(6) {
+            .full {@include flex-grow(0.82);}
+            .empty {@include flex-grow(0.18);}
+          }
+        }
+
+      }
+
+    }
+  }
+
+  #education, #work-experience {
+
+    .topic-list {
+      margin: 0;
+      .topic-container {
+        .topic-year {
+          padding: 0;
+          h1 {
+            display: inline-block;
+            float: right;
+            border: 1px solid lightgray;
+            margin: 0;
+            background-color: $steel;
+            color: white;
+            font-size: 2em;
+            @media screen and (max-width: 40em) {
+              padding: 5px 10px 0 10px;
+              border-radius: 30px 30px 0 0;
+              border-bottom: none;
+            }
+            @media screen and (min-width: 40.063em) {
+              padding: 0 10px 0 20px;
+              border-radius: 30px 0 0 30px;
+              border-right: none;
+            }
+          }
+        }
+        .topic-content {
+          border: 1px solid lightgray;
+          h1 {
+            color: $grayheader;
+          }
+          h2 {
+            color: $steel;
+            font-weight: 100;
+          }
+          ul {
+            list-style-type: square;
+          }
+          @media screen and (max-width: 40em) {
+            border-radius: 10px 0 10px 10px;
+          }
+          @media screen and (min-width: 40.063em) {
+            border-radius: 0 10px 10px 10px;
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+}
