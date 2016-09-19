@@ -10,13 +10,13 @@ www.guillaumeboutin.xyz
 ##  CONAISSANCE TECHNIQUES
 - - -
 ### Back-end
-Javascript, Nodejs, Expressjs, MySQL, MongoDb, Mochajs
+Nodejs, Expressjs, MySQL, MongoDb, Mochajs, PHP, Apache
 
 ### Front-end
-Html, Css, Jquery, Sass, Foundation, Bootstrap, React
+Html, Css, Jquery, Sass, Foundation, Bootstrap, Reactjs, Reduxjs
 
 ### Development tools
-Linux, Git/Github, Grunt
+Linux, Git/Github, Grunt, Gulp
 
 ### Autre
 LaTeX, Matlab, Solidworkds, LtSpice, DipTrace, Inkscape
