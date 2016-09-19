@@ -8,5 +8,3 @@ This is my personal promotional website. I only consists of an index/about, a r√
 *   Grunt
 
 Up until this website will be completed and online, you can consult my RESUME.MD and my PORTFOLIO.MD on the repository
-
-<p align="center">This is centered</p>
