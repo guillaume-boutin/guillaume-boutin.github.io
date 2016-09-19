@@ -10,13 +10,13 @@ www.guillaumeboutin.xyz
 ##   TECHNICAL SKILLS
 - - -
 ###  Back-end
-Javascript, Nodejs, Expressjs, MySQL, MongoDb, Mochajs
+Nodejs, Expressjs, MySQL, MongoDb, Mochajs, PHP, Apache
 
 ### Front-end
-Html, Css, Jquery, Sass, Foundation, Bootstrap, React
+Html, Css, Jquery, Sass, Foundation, Bootstrap, Reactjs, Reduxjs
 
 ### Development tools
-Linux, Git/Github, Grunt
+Linux, Git/Github, Grunt, Gulp
 
 ### Others
 LaTeX, Matlab, Solidworkds, LtSpice, DipTrace, Inkscape
@@ -52,6 +52,12 @@ http://www.goalcast.it
 - - -
 
 ##  WORK EXPERIENCE
+### PHP developer
+**Votresite.ca**, Montreal (current position)
+
+*   Worked on shooopping.ca project, an online platform gathering 120,000 products from more than 1500 boutiques.
+*   Set APIs for between shooopping and the boutiques for managing addition, edition and deletion of products, for sending transaction bills, for subscription of the boutiques.
+
 **Sofdesk**, Montreal (2016)
 
 *   Writing test scripts for the resources of the backend with mocha.js.
