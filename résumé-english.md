@@ -3,7 +3,7 @@
 
 (514) 604-8222
 
-guillaume.boutin@yandex.com
+guillaumeboutin2101@gmail.com
 
 www.guillaumeboutin.xyz
 
@@ -13,10 +13,10 @@ www.guillaumeboutin.xyz
 Nodejs, Expressjs, MySQL, MongoDb, Mochajs, PHP, Apache
 
 ### Front-end
-Html, Css, Jquery, Sass, Foundation, Bootstrap, Reactjs, Reduxjs
+Html, Css, Jquery, Backbone, Sass, Reactjs, Reduxjs
 
 ### Development tools
-Linux, Git/Github, Grunt, Gulp
+Linux, Git/Github, Grunt, Gulp, Webpack
 
 ### Others
 LaTeX, Matlab, Solidworkds, LtSpice, DipTrace, Inkscape
@@ -33,10 +33,10 @@ here:
 
 http://www.decodemtl.com/web-development-full-time/
 
-### Physics Engineering Bachelor's Degree
+### Bachelor's Degree Engineering Physics
 **Université Laval** 2013
 
-### Physics Bachelor's Degree
+###Bachelor's Degree Physics
 **Université-du-Québec-à-Trois-Rivières** 2010
 
 - - -
